@@ -8,7 +8,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: rgba(64, 146, 240, 0.952);
+   
 }
 
 /* NAVBAR */
@@ -37,7 +37,8 @@ html,body{
     display: none;
     height: 100vh;
     width: 18vw;
-    background-color: rgb(78, 60, 145);
+    background-color: rgba(10, 10, 10, 0.397);
+    backdrop-filter: blur(10);
     position: relative;
     top: 0;
     left: 0;
@@ -53,22 +54,44 @@ html,body{
     align-items: center;
  }
 
+ /*page1*/
+
+  #page1{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #text{
+    margin-top:18vh;
+  }
+
+  #text span #star {
+    color: red;
+  }
+  
+
+  #text span{
+    color: rgb(26, 234, 241);
+    font-size: 8vh;
+  }
+
+
+/*responsive code*/
  @media screen and (min-width:300px) and (max-width:799px) {
     #nav-menu{
         display: none;     
     }
-    
 
-    #nav-menu-2 h1{
-       
-        font-size: 3vh;
-         
+    #nav-menu-2 h1{ 
+        font-size: 3vh;  
     }
 
     #Responsive-navbar{
         width: 100%;
         height: 100vh;
-      
     }
 
     #navbar h1{
@@ -80,18 +103,42 @@ html,body{
         font-size: 3vh;
         }
 
-        #logo-res{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-           
-        }
+   #logo-res{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;      
+       }
 
         #logo-res h1,#icon-2{ 
             margin-top: 1vh; 
-            font-size: 3vh;
-            
+            font-size: 3vh;  
          }
-         
+
+         /*page1*/
+
+         #page1{
+          width: 100%;
+          height: 32vh;
+        }
+        #page1 img{
+          width:50vw;
+          height:auto ;
+        }
+
+        #text{
+          margin-top:9vh;
+          padding-left: 2vw;
+        }
+      
+        #text span{
+          font-size: 2vh;
+          flex-wrap:wrap;
+        }
+        
+        #text h2,h3{
+          font-size: 1.5vh;
+          flex-wrap: nowrap;
+        }
+       
 
  }
