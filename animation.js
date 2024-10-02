@@ -66,22 +66,21 @@ timeLine.from("#page1 img",{
   },"a")
 
   tl.from(".box1",{
-    x:-20,
-   
+    x:-500,
     duration:1,
     rotateZ:-90,
     opacity:0
   },"b")
 
   tl.from(".box3",{
-    x:60,
+    x:500,
     duration:1,
     rotateZ:90,
     opacity:0
   },"b")
 
   tl.from(".box2",{
-    y:-60,
+    y:-400,
     duration:1,
    
     opacity:0
